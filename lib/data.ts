@@ -36,6 +36,7 @@ export const projects: Project[] = [
       "Call-to-action contact et infos pratiques",
     ],
     demoUrl: "https://boucherie-limare.com",
+    codeUrl: "https://github.com/AntoineDev-fr/Site-boucherie-limare",
   },
   {
     title: "Annuaire entreprises multi-sites (C#)",
@@ -63,17 +64,17 @@ export const projects: Project[] = [
 
 export const timeline = [
   {
+    title: "Formation Concepteur Developpeur d'Applications en alternance",
+    detail: "Approfondissement des fondamentaux web, bonnes pratiques et projets guides.",
+  },
+  {
     title: "Terminale - specialites NSI et Maths",
     detail: "Decouverte des bases de l'algorithmie et de la logique de programmation.",
   },
   {
-    title: "Formation Concepteur Developpeur d'Applications",
-    detail: "Approfondissement des fondamentaux web, bonnes pratiques et projets guides.",
-  },
-  {
     title: "Stage de 3e - MCN",
     detail: "Premiere immersion en entreprise, decouverte du cycle de developpement.",
-  },
+  }
 ];
 
 export const softSkills = [

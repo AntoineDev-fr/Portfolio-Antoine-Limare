@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
@@ -257,7 +257,7 @@ export default function Home() {
                           disabled={!hasDemo}
                           aria-label={hasDemo ? 'Voir la d�mo' : 'D�mo non disponible'}
                         >
-                          D�mo
+                          Démo
                         </Button>
                       </div>
                     </Card>
