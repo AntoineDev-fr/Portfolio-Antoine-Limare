@@ -572,6 +572,9 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+.pointer-events-none {
+  pointer-events: none;
+}
 .visible {
   visibility: visible;
 }
@@ -833,6 +836,9 @@ video {
 .rounded-xl {
   border-radius: 0.75rem;
 }
+.rounded-md {
+  border-radius: 0.375rem;
+}
 .border {
   border-width: 1px;
 }
@@ -1040,6 +1046,9 @@ video {
 }
 .opacity-60 {
   opacity: 0.6;
+}
+.opacity-50 {
+  opacity: 0.5;
 }
 .shadow-glow {
   --tw-shadow: 0 0 30px rgba(225, 29, 72, 0.3);

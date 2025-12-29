@@ -14,6 +14,7 @@ import { Glow } from '@/components/Glow';
 import { TimelineItem } from '@/components/TimelineItem';
 import { projects, skills, softSkills, timeline } from '@/lib/data';
 
+
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
@@ -243,22 +244,30 @@ export default function Home() {
                         ))}
                       </ul>
                       <div className="mt-auto pt-6 grid grid-cols-2 gap-3">
-                        <Button
-                          variant="outline"
+                        <a
                           href={project.codeUrl ?? '#'}
-                          disabled={!hasCode}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           aria-label={hasCode ? 'Voir le code' : 'Code non disponible'}
+                          className={`inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm
+                            ${!hasCode ? 'pointer-events-none opacity-50' : ''}`}
                         >
                           Code
-                        </Button>
-                        <Button
-                          variant="ghost"
-                          href={project.demoUrl ?? '#'}
-                          disabled={!hasDemo}
-                          aria-label={hasDemo ? 'Voir la d�mo' : 'D�mo non disponible'}
+                        </a>
+
+
+                        <a
+                          href={project.codeUrl ?? '#'}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={hasDemo ? 'Voir le code' : 'Code non disponible'}
+                          className={`inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm
+                            ${!hasDemo ? 'pointer-events-none opacity-50' : ''}`}
                         >
                           Démo
-                        </Button>
+                        </a>
+
+
                       </div>
                     </Card>
                   </motion.div>
